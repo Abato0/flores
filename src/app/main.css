@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/estrellas.jpeg");
+  background-image: url("/images/estrella-fugaz.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-color: black; */
@@ -26,6 +26,8 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #b1b1b1;
 }
 .greetings > span {
   animation: glow 2.5s ease-in-out infinite;
@@ -100,8 +102,19 @@ body {
   }
 }
 
+.container {
+  /* background-color: red; */
+  backdrop-filter: invert(25%);
+  border-radius: 10px;
+  padding: 80px;
+}
+
 .description {
-  color: #ffffa6;
+  color: #dfd5c0;
+  /* font-weight: 200; */
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #b1b1b1;
+  text-align: center;
 }
 
 /* Estilo para el botón */
@@ -125,6 +138,6 @@ body {
 
 /* Efecto de resplandor al pasar el cursor sobre el botón */
 .button button:hover {
-  background-color: rgb(249, 232, 2); /* Cambia el color de fondo al pasar el mouse a naranja */
-  box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
+  background-color: rgb(255, 221, 71); /* Cambia el color de fondo al pasar el mouse a naranja */
+  box-shadow: 0 0 10px rgb(195, 201, 109), 0 0 20px yellow, 0 0 30px yellow; /* Efecto de resplandor amarillo */
 }
